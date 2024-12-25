@@ -1,0 +1,296 @@
+%-------------------------
+% Resume in Latex
+% Author : Adam Derylo 
+% Based off: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\setlength{\footskip}{4.08003pt}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+  {\Huge \scshape Wojciech Michaluk} \\[5pt] % Adds spacing below the name
+  \small
+  \faPhone\ +48 500 424 248 ~ 
+  \href{mailto:wojo.michaluk@gmail.com}{\faEnvelope\ wojo.michaluk@gmail.com} ~
+  \href{https://www.linkedin.com/in/wojciech-michaluk-a09465269/}{\faLinkedin\ wojciech-michaluk} ~
+  \href{https://github.com/wojo501}{\faGithub\ github.com/wojo501} \\[3pt]
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+\resumeSubHeadingListStart
+
+% WUT - all accolades
+\resumeSubheading
+{Warsaw University of Technology}{Oct. 2021 -- Feb. 2025 (Expected)}
+{BSc of Data Science}{Warsaw, Poland}
+\resumeItemListStart
+\resumeItem{Best technical univeisty in Poland according to the Perspektywy ranking.}
+\resumeItemListEnd
+
+% TU - all accolades
+\resumeSubheading
+{Vienna University of Technology}{Mar. 2024 -- Sept. 2024}
+{MSc of Data Science (Scholarship)}{Vienna, Austria}
+\resumeItemListStart
+\resumeItem{Best technical univeisty in Austria according to the QS ranking.}
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+\vspace{-16pt}
+
+%-----------PROGRAMMING SKILLS-----------
+\section{Skills}
+\begin{itemize}[leftmargin=0.15in, label={}]
+  \small{\item{
+                \textbf{Programming Languages}{: Python, Java, Kotlin, R, Typescript, Matlab} \\
+                \textbf{Technologies}{: SQL, AWS, Spark, Hive, NiFi, MongoDB, Git} \\
+                \textbf{Natural languages}{: English (C1 - IELTS), Polish (Native), German (A2 - Certificate University of Vienna)} \\
+                \textbf{Driving license}{: AM, A2, B2, Yachts, Motorboats}\\
+          }}
+\end{itemize}
+\vspace{-16pt}
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+\resumeSubHeadingListStart
+
+% Amazon
+\resumeSubheading
+{Amazon}{Jul. 2024 - Oct. 2024}
+{Software Engineering Intern $|$ Amazon Web Services, Kotlin, TypeScript, Git}{Madrid, Spain}
+\resumeItemListStart
+\resumeItem{Mobile development for iOS and Android for Amazon Devices division}
+\resumeItem{Developed a Business Metrics controlling system in \href{https://play.google.com/store/apps/details?id=com.amazon.tahoe.grownups&hl=en}{Kids+ Parent Dashboard} mobile app (100K+ downloads in Google Store)}
+\resumeItem{Implemented infrastructure using 5+ Amazon Web Services: Cognito, Kinesis, Lambda, S3, Pipelines ect.}
+\resumeItem{Established end-to-end testing with JUnit.}
+\resumeItemListEnd
+
+% Essembli - all
+\resumeSubheading
+{Essembli}{Oct. 2023 - Jan. 2024}
+{Junior Java Developer $|$ SQL, Java, Mercurial}{Warsaw, Poland}
+\resumeItemListStart
+\resumeItem{Oracle Customer Care and Billing service maintenance for 3 foreign customers.}
+\resumeItem{Code developemnet with Java and data analysis with SQL.}
+\resumeItem{Member of 10 developers team. Staying in touch with analysts, working in scrum.}
+\resumeItemListEnd
+
+% Infosys - all
+\resumeSubheading
+{Infosys}{Jul. 2023 - Sept. 2023}
+{Full Stack/AI Intern $|$ Python (HuggingFace, Flask), Java, Swagger, Git}{Bangalore, India}
+\resumeItemListStart
+\resumeItem{Created dataset for Large Language Model finetuning in Python with 80K+ data rows.}
+\resumeItem{Swagger API design, API implementation in Spring Boot.}
+\resumeItem{The distinguished hackathon project among 20 teams.}
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+\section{Projects}
+\vspace{5pt}
+\resumeSubHeadingListStart
+
+\resumeProjectHeading
+{\href{https://github.com/matkubita/ClickbaitDetectionThesis}{\textbf{Clickbait News Detection and Analysis} (Thesis Link)} $|$ \emph{Python, Pytorch, JavaScript, LaTeX}}{Jul. 2024 - Feb. 2025}
+\resumeItemListStart
+\resumeItem{Bachelor's thesis at Warsaw University of Technology. Developed a browser extension for clickbait detection and analysis using NLP modules.}
+\resumeItem{Collaborated internationally with professors from Modul University Vienna.}
+\resumeItem{Achieved 82\% accuracy in clickbait detection using machine learning models based on large language model embeddings.}
+\resumeItemListEnd
+
+\resumeProjectHeading
+{\textbf{Machine Learning \& Deep Neural Networks} $|$ \emph{Python, Pytorch}}{Oct. 2022 - Jul. 2024}
+\resumeItemListStart
+\resumeItem{\href{https://github.com/wojo501/speml24_2}{Centralised and Federated Learning for image classification (Link).}}
+\resumeItem{\href{https://github.com/wojo501/recommender_systems}{Recommender Systems Challenge \textit{WeKnowWhatYouWant} (Link).}}
+\resumeItem{\href{https://github.com/wojo501/dlvc_2}{Deep Learning in Visual Computing (Link).}}
+\resumeItem{\href{https://github.com/wojo501/mtt-distillation-neural-networks}{Implementation of ML paper: \textit{Dataset Distillation by Matching Training Trajectories} (Link).}}
+\resumeItem{\href{https://github.com/wojo501/clustering-ML}{Clustering methods (Link).}}
+\resumeItem{\href{https://github.com/wojo501/binary-classification-practice-ML}{Kaggle Binary Classification Challange (Link).}}
+\resumeItemListEnd
+
+\resumeProjectHeading
+{\textbf{Data Processing \& Visualization} $|$ \emph{R, Shiny, Java, Spark, AWS, JavaScript}}{Oct. 2021 - Jul. 2024}
+\resumeItemListStart
+\resumeItem{\href{https://github.com/wojo501/data_intensive_computing_task_2}{Data Intensive Computing with Spark and AWS (Link).}}
+\resumeItem{\href{https://github.com/wojo501/todos-react-final-project}{ToDos React Web App (Link).}}
+\resumeItem{\href{https://github.com/wojo501/TWD-google-maps-dashboard}{Google Maps Dashboard Data Visualization (Link).}}
+\resumeItem{\href{https://github.com/wojo501/crypto-dashboard-final-project}{Crypto Currencies Tracker Dashboard (Link).}}
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+%-----------VOLUNTEERING AND ORGANISATIONS-----------
+\section{Volunteering \& Organisations}
+\vspace{5pt}
+\resumeSubHeadingListStart
+
+% Sailing instructor - all
+\resumeSubheading
+{Sailing Instructor}{Jun. 2021 - Sep. 2021}
+{Skipper}{Ryn, Poland}
+\resumeItemListStart
+\resumeItem{Maintained safety and boating credentials. Planning daily class performance according to the weather.
+}
+\resumeItemListEnd
+
+% Math/Physics tutor - all
+\resumeSubheading
+{Math and Physics Tutor}{Sep. 2019 - Jun. 2023}
+{On my own}{Gdansk, Poland}
+\resumeItemListStart
+\resumeItem{Support students with final high-school exam preparation for 4 years.}
+\resumeItemListEnd
+
+% Alpenverein - all
+\resumeSubheading
+{Alpenverein Volunteer}{2018 - 2021}
+{Alpenverein}{Wachau, Austria}
+\resumeItemListStart
+\resumeItem{Supported endangered species protection initiatives in Austria.}
+\resumeItem{Effectively communicated with an international team of
+volunteers, utilizing strong interpersonal skills}
+\resumeItemListEnd
+
+% Math/Physics tutor - all
+\resumeSubheading
+{Science Community \textit{Talented from Pomerania}}{2018 - 2021}
+{Talented from Pomerania}{Pruszcz Gdanski, Poland}
+\resumeItemListStart
+\resumeItem{Engaged in a Science Program uniting talented students from Pomerania, Poland, expanding my expertise in Physics.}
+\resumeItem{Attending lectures at Gdansk University of Technology.}
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+%----------Extracurricular------------
+\section{Extracurricular}
+\begin{itemize}[leftmargin=0.35in]
+  \small{\item{\textit{Machine Learning in Engineering Applications} ATHENS programme at Istambul University of Technology}}
+  \vspace{-7pt}
+  \small{\item{Hackaton \textit{Climathon 2023} in Katowice}}
+  \vspace{-7pt}
+\end{itemize}
+\vspace{-16pt}
+
+\end{document}
